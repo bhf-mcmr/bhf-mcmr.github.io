@@ -585,9 +585,9 @@
 
 			.tabPanel h2.internalTitle									{display:block; margin:0; padding:0; color:white; cursor:pointer; background:#f5f5f5; border-top:1px solid #ccc; font-size:1.8em;}
 
-			.tabPanel h2.internalTitle a									{display:block; padding:0.5em 0 0.5em 40px; background: url(../images/design/accordion-expand.png) 10px 50% no-repeat; color:#2d3032; text-decoration:none}
+			.tabPanel h2.internalTitle a									{display:block; padding:0.5em 0 0.5em 40px; background: url(./accordion-expand.png) 10px 50% no-repeat; color:#2d3032; text-decoration:none}
 			.tabPanel:last-child h2.internalTitle a							{ border-bottom:1px solid #ccc; }
-			.tabPanel h2.internalTitle a.activeAccordionLink				{background: url(../images/design/accordion-collapse.png) 10px 50% no-repeat; border-bottom:1px solid #ccc}
+			.tabPanel h2.internalTitle a.activeAccordionLink				{background: url(./accordion-collapse.png) 10px 50% no-repeat; border-bottom:1px solid #ccc}
 
 			.no-js .tabPanel h2.internalTitle a							{background:none; padding:10px}
 			.no-js .tabPanel h2.internalTitle a.activeAccordionLink		{background:none}
@@ -1297,14 +1297,14 @@
 			
 			/* Title */
 			.accordion .titleHeader							{position:relative; cursor:pointer; border-top:1px solid #aaa; background-color:#eee; 
-															background-image:url(../images/design/accordion-expand.png); 
+															background-image:url(./accordion-expand.png); 
 															background-position:10px 17px; 
 															background-repeat:no-repeat;}
 			
 			.accordion .titleHeader p						{padding:10px 10px 10px 50px;}
 			
 			.accordionPanel.active .titleHeader 			{border-bottom:1px solid #aaa;
-															background-image:url(../images/design/accordion-collapse.png); 
+															background-image:url(./accordion-collapse.png); 
 															background-position:10px 17px; 
 															background-repeat:no-repeat;}
 			
