@@ -1,0 +1,557 @@
+﻿/* Home page quick links - start */
+article.mainContentContainer p img {float:left;padding:1em;}
+#quickLinksBackground { background-color: #ececed; }
+
+#quickLinksList { display: none; }
+#quickLink { width: 100%; }
+#quickLinkGo { display: none; width: 25%; max-width: 100px; }
+#quickLink { max-width: 400px; }
+.no-js #quickLink { display: inline; width: 70%; max-width: 300px; }
+.no-js #quickLinkGo { display: inline; }
+
+/* Home page quick links - end */
+
+
+/* Course finder promo boxes - start */
+
+.courseFinder form { margin-top: 0; }
+.courseFinder #courseKeywords,
+.courseFinder #studyLevel,
+.courseFinder-inner #studyLevel { margin-bottom: 10px; background-color: #fff; }
+.courseFinder select option:checked { box-shadow: 0 0 10px 100px #254e57 inset; }
+.courseFinder input[type=text] { border: none; padding: 6px 28px 6px 8px !important; z-index: 90000; }
+.courseFinder input[type=submit] { width: 100%; }
+.courseFinder ul.courseLinks { margin: 0; padding: 0; }
+.courseFinder ul.courseLinks li:before { content: "\00bb\00a0"; vertical-align: 1px; color: #ffd300; }
+.courseFinder ul.courseLinks li { margin: 0; padding: 5px 0; background: none; }
+.courseFinder ul.courseLinks li a,
+.courseFinder ul.courseLinks li a:visited,
+.courseFinder ul.courseLinks li a:hover { color: #ffd300; padding: 5px 0; }
+.courseFinder.multi p { padding-bottom: 0.5em; }
+.courseFinder.single p { padding-bottom: 0; }
+.courseFinder.single p a:before { content: "\00bb\00a0"; vertical-align: 1px; color: #ffd300; display:inline-block;}
+.courseFinder p a,
+.courseFinder p a:visited,
+.courseFinder p a:hover { color: #ffd300; }
+.courseFinder .ui-autocomplete li { background: none; }
+
+ul.ui-autocomplete { position: absolute; top: 0; left: 0; z-index: 3000; }
+ul.ui-autocomplete { background-color: #fff; margin: 5px 0 0 0; padding: 0; border: 1px solid #6b2c91; width: 200px; list-style: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; /*height: auto; height: expression(200 + "px");*/ max-height: 400px; overflow-y: auto; overflow-x: hidden; padding-right: 0; -moz-box-shadow: 2px 2px 3px #888; -webkit-box-shadow: 2px 2px 3px #888; box-shadow: 2px 2px 2px #888; }
+
+.contentContainer ul.ui-autocomplete { border-top-width: 0; }
+
+ul.ui-autocomplete li { margin: 0; padding: 0; border: 0px solid #fff; line-height: 1.3; }
+ul.ui-autocomplete li:hover { border: 0px solid #000; background-color: #eee; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+ul.ui-autocomplete li a { display: block; cursor: pointer; padding: 8px 5px; }
+ul.ui-autocomplete li a#ui-active-menuitem { background-color: #6b2c91; color: #fff; text-decoration: none; }
+ul.ui-autocomplete li a img { vertical-align: middle; }
+
+span.ui-helper-hidden-accessible { display: none; }
+
+/* Course finder promo boxes - end */
+
+/* Course search page - start */
+
+#courseSearch fieldset { margin-bottom: 0; padding: 0; border: none; }
+#courseSearchNoResults { display: none; }
+#courseSearch #courseSearchButtons input { margin-right: 10px; padding: 6px 6px; }
+#courseSearch #advancedOptions { display: none; }
+#courseSearch #advancedOptions.show { display: block; }
+#courseSearch #advancedToggle,
+#courseSearch #clearFilters { margin-right: 10px; display: none; }
+#courseSearch #filterCheckboxes { margin: 0; padding: 0; }
+#courseSearch #filterCheckboxes li { background: none; margin: 5px 0 0 0; padding: 0; }
+#loadingText { display: none; }
+div#columnHeadings { display: none; font-size: 1.230769em; }
+div.columnHeading { margin: 0; padding: 8px 0px; background-color: #383b3c; color: #fff; font-weight: bold; }
+ul.courseList { margin: 0; padding: 0; list-style: none; border-top: 0px solid #ccc; width: 100%; }
+ul.courseList li { margin: 0 0 10px 0; padding: 0; background: none; }
+ul.courseList li div { vertical-align: top; padding: 8px 0; }
+div.title { display: inline; }
+div.degree { display: inline; }
+div.postgraduate div.degree { display: none; }
+div.duration { display: inline; }
+div.ucas { display: inline; }
+ul.courseList li div.degree:before { content: "\00a0"; }
+ul.courseList li div.duration:before { content: "\00a0\002f\00a0"; }
+ul.courseList li div.ucas:before { content: "\00a0\002f\00a0"; }
+#noCourses { display: none; }
+#loadingImage { display: none; vertical-align: -9px; height: 31px; }
+
+/* Course search page - end */
+
+/* Course profile - start */
+
+#courseprofile #schoolPanel { display: none; box-sizing: border-box; -moz-box-sizing: border-box; background-color: #ebeced; padding: 20px; margin-bottom: 1em; border-top: 1px solid #999; }
+#courseprofile #schoolPanel p { font-weight: 600; }
+#courseprofile #schoolPanel p#schoolName { font-size: 1.384615em; line-height: 1.3; padding-bottom: 0; }
+#courseprofile #schoolPanel p#schoolName a { font-weight: 600; color: #6b2c91; text-decoration: none; padding-right: 25px; background: url('../images/design/menu-arrow-right-closed-grey.png') right center no-repeat; background-size: 15px 12px; }
+#courseprofile #schoolPanel p#schoolName a:hover { text-decoration: underline; }
+
+#courseprofile #pg { border-color: #999; }
+
+#courseprofile .tab { display: none; }
+#courseprofile .tab ul { margin: 0; padding: 0; list-style: none; overflow: hidden; /*background: #fff url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left;*/ }
+#courseprofile .tab ul li { display: inline; float: left; margin: 0 0 0 0; padding: 0; font-weight: normal; /*text-align: center;*/ background: none; }
+#courseprofile .tab ul li a { float: left; display: block; /*text-align: center;*/ background-color: #e2e2e2; color: #000; text-decoration: none; margin: 0; padding: 6px 5px 8px 5px; height: auto; border: 1px solid #999; border-bottom: none; font-size: 0.9em; font-weight: 500; background: #e2e2e2 url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+#courseprofile .tab ul li a:hover { text-decoration: underline; }
+#courseprofile .tab ul li span.currentbranch0 a { background-color: #fff; color: #000; border-color: #999; }
+#courseprofile .tab ul li span a { background-color: #fff; color: #272828; border-color: #999; background-image: none; }
+
+#courseprofile div.factfile { margin: 0 0 1.5em 0; border: 1px solid #999; padding: 20px 20px 10px 20px; /*-webkit-box-shadow: 4px 4px 0 0 rgba(0, 0, 0, .3); -moz-box-shadow: 4px 4px 0 0 rgba(0, 0, 0, .3); box-shadow: 4px 4px 0 0 rgba(0, 0, 0, .3); */ font-size: 1em; overflow: visible; }
+#courseprofile div.factfile h2 { margin: 0 0 0.5em 0; padding: 0; }
+#courseprofile div.factfile label { font-weight: bold; margin: 0; padding: 0; }
+#courseprofile div.factfile p { font-size: 1em; margin: 0 1em 0.3em 1em; padding: 0; }
+#courseprofile div.factfile ul, #courseprofile div.factfile ol { margin: 1em 0; }
+
+#courseprofile div.factfile dl { margin: 0; }
+#courseprofile div.factfile dt { font-weight: 600; margin: 0; padding: 0; line-height: 1.5; }
+#courseprofile div.factfile dd { font-weight: normal; margin: 0 0 0.7em 0; padding: 0; line-height: 1.5; }
+#courseprofile div.factfile dd p { margin: 0 0 1em 0; font-size: 1em; }
+#courseprofile div.factfile dd ul { margin: 0 0 1em 0; padding: 0; }
+#courseprofile div.factfile dd ul li, #courseprofile div.factfile dd ol li { margin: 0 0 0 0; padding: 0 0 10px 1em; font-size: 1em; }
+
+#courseprofile div.factfile .howToApply { margin-top: 10px; }
+
+#courseprofile p.taborall { display: none; }
+
+#courseprofile .courseprofilecontent { position: relative; }
+
+#courseprofile #compareCourse { display: none; }
+
+#courseprofile div.field { font-size: 1.230769em; line-height: 1.5; padding: 0 0 1em; color: #343536; font-weight: 400; }
+#courseprofile div.field p { font-size: 1em; }
+#courseprofile div.field li { font-size: 1em; }
+#courseprofile div.field table th,
+#courseprofile div.field table td { font-size: 1em; }
+
+#courseprofile dd div.field { font-size: 1em; }
+
+#courseprofile div.contact dl { margin: 0; }
+#courseprofile div.contact dt { font-weight: 600; margin: 0; padding: 0; line-height: 1.5; }
+#courseprofile div.contact dd { font-weight: normal; margin: 0 0 0.7em 0; padding: 0; line-height: 1.5; }
+#courseprofile div.contact dd p { margin: 0 0 1em 0; font-size: 1em; }
+#courseprofile div.contact dd ul { margin: 0 0 1em 0; padding: 0; }
+#courseprofile div.contact dd ul li { margin: 0 0 0 2em; padding: 0; }
+
+#courseprofile .prevnext { margin-top: 20px; padding: 0 20px 0 0; width: auto; display: inline-block; background: url("../images/design/course-next-arrow-blue.png") top right no-repeat #14516e; min-height: 41px; }
+#courseprofile .prevnext p { margin: 0; padding: 0; min-height: 41px; line-height: 1.2; }
+#courseprofile .prevnext p a { color: #fff; display: block; padding: 10px; text-decoration: none; }
+#courseprofile .prevnext p a:hover { color: #fff; text-decoration: underline; }
+
+/* Course units within a course profile - start */
+
+
+#courseprofile .courseunits .hidedefault { display: none; }
+#courseprofile .courseunits tfoot td { text-align: center; background-color: #fff; }
+#courseprofile .courseunits tfoot tr.link td { text-align: center; background-color: #ccf; padding: 0; }
+#courseprofile .courseunits tfoot tr.link td a { display: block; color: #000; text-decoration: none; padding: 6px; }
+#courseprofile .courseunits tfoot tr.link td a:before { content: "\00bb\00a0"; }
+#courseprofile .courseunits tfoot tr.link td a:hover { text-decoration: underline; }
+#courseprofile .returntodetails { width: auto; float: right; margin: 20px 0 0 10px !important; background-color: #e2e2e2; padding: 0; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
+#courseprofile .returntodetails a { padding: 7px 15px; display: block; color: #000; text-decoration: none; }
+#courseprofile .returntodetails a:hover { text-decoration: underline; }
+#courseprofile .returntocoursedetails { width: auto; float: right; margin: 20px 0 0 10px !important; background-color: #e2e2e2; padding: 0; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
+#courseprofile .returntocoursedetails a { padding: 7px 15px; display: block; color: #000; text-decoration: none; }
+#courseprofile .returntocoursedetails a:hover { text-decoration: underline; }
+
+#courseprofile .courseunits tfoot {display:none;}
+
+/* Course units within a course profile - end */
+
+a.applyUcas { padding: 6px 12px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #6b2c91; border: 1px solid #6b2c91; color: #fff; text-decoration: none; }
+a.applyUcas:visited { color: #fff; }
+a.applyUcas:hover,
+a.applyUcas:focus { background-color: #79379d; color: #fff; }
+a.applyUcas:active { background-color: #55147a; color: #fff; }
+
+/* Course profile - end */
+
+/* Buttons - start */
+
+p.button a { display: inline-block; padding: 6px 12px; margin: 0 10px 10px 0; border: 1px solid #6b2c91; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #6b2c91; color: #fff; text-decoration: none; }
+p.button a:visited { color: #fff; }
+p.button a:hover,
+p.button a:focus { /*text-decoration: underline;*/ background-color: #79379d; color: #fff; }
+p.button a:active { /*text-decoration: underline;*/ background-color: #55147a; color: #fff; }
+
+p.button a.black { background-color: #383a3c; }
+p.button a.black:hover,
+p.button a.black:focus { background-color: #424547; }
+p.button a.black:active { background-color: #1d2022; }
+
+p.button a.white { background-color: #ececed; color: #343536; border-color: #ececed; }
+p.button a.white:hover,
+p.button a.white:focus { background-color: #fff; }
+p.button a.white:active { background-color: #e4e4e4; border-color: #e4e4e4; }
+
+p.button a.grey { background-color: #949699; color: #fff; }
+p.button a.grey:hover,
+p.button a.grey:focus { background-color: #a9abad; }
+p.button a.grey:active { background-color: #7c7d80; }
+
+input[type=submit].grey,
+input[type=button].grey { background-color: #949699; color: #fff; }
+input[type=submit].grey:hover,
+input[type=submit].grey:focus,
+input[type=button].grey:hover,
+input[type=button].grey:focus { background-color: #a9abad; }
+input[type=submit].grey:active,
+input[type=button].grey:active { background-color: #7c7d80; }
+
+input[type=submit].black,
+input[type=button].black { background-color: #383a3c; color: #fff; }
+input[type=submit].black:hover,
+input[type=submit].black:focus,
+input[type=button].black:hover,
+input[type=button].black:focus { background-color: #424547; }
+input[type=submit].black:active,
+input[type=button].black:active { background-color: #1d2022; }
+
+/* Buttons - start */
+
+/* Video - start */
+
+.videobox { width: 50%; max-width: 480px; position: relative; float: right; margin: 0 0 20px 20px; background-color: #000; overflow: hidden; }
+.videobox.fullwidth { width: 100%; max-width: none; float: none; margin: 0 0 1.5em 0; }
+.embedded .videobox2.fullwidth {margin: 0 0 0 0;}
+
+.ie7 .videobox.fullwidth { width: 640px; }
+
+.ie7 .videobox.loaded { /*background-color: transparent;*/ overflow: visible; }
+.ie7 .videobox.loaded a { display: none; }
+.ie8 .videobox.loaded a { display: none; }
+.ie9 .videobox.loaded {}
+.videobox a { overflow: hidden; width: 100%; height: 100%; display: inline; }
+.videobox img { border: none; width: 100%; height: auto; }
+.videobox a .video-play-button { height: 100px; width: 100px; position: absolute; left: 50%; top: 50%; margin-left: -50px; margin-top: -50px; text-indent: -9999px; background-image: url('../images/design/play-button-blue-white.png'); background-position: 0 0; background-repeat: no-repeat; }
+.videobox a:hover .video-play-button { background-position: -100px 0; }
+.jwplayer { position: absolute !important; top: 0 !important; display: block !important; }
+.lt-ie9 .jwplayer { display: inline-block !important; }
+
+.videobox2 { background-color: #000; position: relative; margin: 0 0 0 0; padding-bottom: 56.25% !important; height: 0; box-sizing: border-box; -moz-box-sizing: border-box; clear: both; }
+.videobox2.fullwidth { /*width: 100%; max-width: none; float: none;*/ background-color: #000; position: relative; margin: 0 0 1.5em 0; padding-bottom: 56.25%; height: 0; }
+.videobox2 a { overflow: hidden; width: 100%; height: 100%; display: inline; }
+.videobox2 img { border: none; width: 100%; height: 100%; position: absolute; top: 0; left: 0; /*z-index: 100000;*/ }
+.videobox2 a .video-play-button { position: absolute; left: 50%; top: 50%; text-indent: -9999px; background-image: url('../images/design/play-button-blue-black.png'); background-repeat: no-repeat; height: 80px; width: 80px; margin-left: -40px; margin-top: -40px; background-size: 160px 80px; }
+.videobox2 a:hover .video-play-button { background-position: -80px 0; }
+.videobox2 iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.videobox2 video { width: 100% !important; height: 100% !important; transform: scale(1, 1) !important; -webkit-transform: scale(1, 1) !important; }
+.videobox2 object,
+.videobox2 embed { position: absolute !important; top: 0 !important; width: 100% !important; height: 100% !important; }
+
+.ie7 .videobox2.fullwidth { width: 320px; height: 180px; padding: 0; }
+.ie7 .videobox2.fullwidth img { width: 320px; height: 180px; }
+.ie7 .videobox2.fullwidth div { width: 320px !important; height: 180px !important; }
+.ie7 .videobox2 a .video-play-button,
+.ie8 .videobox2 a .video-play-button { height: 100px; width: 100px; margin-left: -50px; margin-top: -50px; background-size: 200px 100px; }
+.ie7 .videobox2 a:hover .video-play-button,
+.ie8 .videobox2 a:hover .video-play-button { background-position: -100px 0; }
+
+.videoPlaylistWrapper { margin-bottom: 1.5em; }
+.videoPlaylistWrapper .jwplayer { position: relative !important; display: inline-block !important; }
+.videoPlaylistWrapper .jwplayer.jw-flag-fullscreen { display: block !important; } /* Essential for getting the player to show in full screen mode in Chrome. */
+
+.jw-display-icon-container {
+	background-color: #28a0d8 !important;
+	border-width: 0 !important;
+	border-width: 4px !important;
+	border-style: solid !important;
+	border-color: #fff !important;
+	border-color: rgba(255, 255, 255, 0.25) !important;
+	background-clip: padding-box !important;
+	border-radius: 56px !important;
+}
+.jwplayer:hover .jw-display-icon-container.jw-background-color {
+	background-color: #004e72 !important;
+}
+.jw-display-icon-container .jw-icon-display:hover {
+	color: #fff !important;
+}
+.jw-icon-display {
+	color: #fff !important;
+}
+
+.ios .youtube .jw-display-icon-container,
+.ios .youtube .jw-icon-display { pointer-events: none !important; }
+/* Video - end */
+
+/* Google search results - start */
+
+.searchresults { margin: 0; padding: 0; }
+
+.searchresults-statistics p { margin: 0; padding: 0; }
+.searchresults-data dl dt { margin: 2em 0 0 0; padding: 0; font-weight: normal; }
+
+.searchresults-data dl dd { font-size: 1.076923em; line-height: 1.5; margin: 0; padding: 0; word-wrap: break-word; }
+.searchresults-data .url { color: #093; padding: 0; margin-top: 0; word-wrap: break-word; }
+.searchresults-data .size { display: none; }
+.searchresults-data .size,
+.searchresults-data .moreresults { color: #000; padding: 0; }
+.searchresults-navigation { margin: 1em 0 2.5em 0; padding: 0; width: 98%; overflow: hidden; }
+.searchresults-navigation ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
+.searchresults-navigation ul li { display: inline; float: left; margin: 0; padding: 0; background: none; text-align: center; }
+.searchresults-navigation ul li.numeric { display: none; }
+.searchresults-navigation ul li.numeric.currentpage { display: inline; }
+.searchresults-navigation ul li a,
+.searchresults-navigation ul li span { display: block; padding: 7px; margin: 0 5px 5px 0; min-width: 40px; background: #ececed; color: #000; text-decoration: none; }
+.searchresults-navigation ul li span.pagetext { display: inline; padding: 0; margin: 0; }
+.searchresults-navigation ul li a:hover { color: #000; text-decoration: underline; }
+.searchresults-navigation ul li a:visited { color: #000; }
+.spelling { color: #c03; }
+.synonyms { color: #c03; }
+.copyright { font-size: 1em; font-weight: normal; margin: 0; padding: 0; display: none; }
+#content .searchhints { /*clear: left;*/ position: relative; float: left; width: 98%; }
+
+/* Google search results - end */
+
+/* Research staff profiles - start */
+
+form.atoz { margin: 0 0 2.5em; }
+
+ul.atoz { display: none; list-style: none; margin: 1.5em 0 2.5em; padding: 0; overflow: hidden; color: #ccc; }
+ul.atoz li { display: list-item; float: left; margin: 0 5px 5px 0; padding: 0; box-sizing: border-box; color: #fff; vertical-align: middle; background-image: none; width: 6.69%; }
+ul.atoz li.selected, ul.atoz li.noresults { /*min-width: 10px;*/ text-align: center; }
+ul.atoz li.selected { font-weight: bold; }
+ul.atoz li.noresults { background-color: #ccc; color: #333; }
+ul.atoz li a { display: block; color: #000; background-color: #ececed; text-decoration: none; padding: 5px 7px; /*min-width: 20px;*/ text-align: center; }
+ul.atoz li.selected strong { display: block; color: #fff; background-color: #393a3c; text-decoration: none; padding: 5px 7px; /*min-width: 20px;*/ text-align: center; }
+ul.atoz li a:visited { color: #000; }
+ul.atoz li a:hover { color: #000; text-decoration: underline; }
+
+
+.mainContentContainer h2{ margin-top: .2em; }
+.mainContentContainer .staffList { margin-left: 0; }
+.mainContentContainer .staffList li { padding-left: 0; background: none; }
+
+#researchstaffprofile .tab { display: none; }
+#researchstaffprofile .tab ul { margin: 0; padding: 0; list-style: none; overflow: hidden; /*background: #fff url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left;*/ }
+#researchstaffprofile .tab ul li { display: inline; float: left; margin: 0 0 0 0; padding: 0; font-weight: normal; /*text-align: center;*/ background: none; }
+#researchstaffprofile .tab ul li a { float: left; display: block; /*text-align: center;*/ background-color: #e2e2e2; color: #000; text-decoration: none; margin: 0; padding: 6px 5px 8px 5px; height: auto; border: 1px solid #999; border-bottom: none; font-size: 0.9em; font-weight: 500; background: #e2e2e2 url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+#researchstaffprofile .tab ul li a:hover { text-decoration: underline; }
+#researchstaffprofile .tab ul li span.currentbranch0 a { background-color: #fff; color: #000; border-color: #999; }
+#researchstaffprofile .tab ul li span a { background-color: #fff; color: #272828; border-color: #999; background-image: none; }
+
+#researchstaffprofile #pg { border-color: #999; }
+
+#researchstaffprofile .researchstaffprofile-section .body img.photo { border: 1px solid black; width: 100px; margin: 0 0 10px 0; }
+
+/* Research staff profiles - end */
+
+#countryprofile .tab { /*display: none;*/ }
+
+/* Social media directory - start */
+
+table.socialmedia { width: 100%; margin: 20px 0; border: 0; }
+table.socialmedia tbody { width: 100%; }
+table.socialmedia tbody tr { border-bottom: 0px solid #ccc; }
+table.socialmedia th { text-align: center; color: #000; font-weight: 400; }
+table.socialmedia td { text-align: left; vertical-align: top; border-width: 0; padding: 10px; font-size: 1.384615em; display: block; box-sizing: border-box; -moz-box-sizing: border-box; }
+table.socialmedia td.entity { width: 100%; padding-top: 18px; }
+table.socialmedia td.channels { width: 100%; }
+table.socialmedia td ul { list-style: none; margin: 0; padding: 0; }
+table.socialmedia td ul li { display: inline-block; margin: 0 10px 0px 0; padding: 5px 0; background: none; height: 34px; }
+table.socialmedia td ul li a { display: inline-block; vertical-align: middle; height: 34px; }
+table.socialmedia td ul li a img { margin-bottom: 0; }
+
+ul.socialmedia.corporate { list-style: none; padding: 0; margin: 20px 0; }
+ul.socialmedia.corporate li { display: inline-block; margin: 0 10px 10px 0; background: none; padding: 0; }
+
+/* Social media directory - end */
+
+/* Gift Aid calculator - start */
+
+#giftAidCalculator { clear: both; margin-bottom: 20px; }
+#giftAidCalculator #inner { position: relative; }
+#giftAidCalculator #calculator { }
+#giftAidCalculator form { margin: 0; }
+#giftAidCalculator label,
+#giftAidCalculator .label { color: #fff; }
+#giftAidCalculator input[type=submit],
+#giftAidCalculator input[type=button] { font-size: 1.230769em; }
+#giftAidCalculator #donate { margin: 0 10px 10px 0; }
+#giftAidCalculator #results { display: none; }
+#giftAidCalculator table { display: table; margin: 0 0 25px; width: 100%; }
+#giftAidCalculator table tbody { width: 100%; }
+#giftAidCalculator table tbody tr { width: 100%; background: none; }
+#giftAidCalculator table tbody th { width: 75%; background: none; border: none; font-weight: 400; }
+#giftAidCalculator table tbody td { width: 25%; background: none; border: none; text-align: right; color: #fff; }
+#giftAidCalculator #higherRates { display: none; }
+
+/* Gift Aid calculator - end */
+
+
+.vidPromoPromo					{margin-right:0;}
+
+
+.vidPromoVideo {position:relative;height:0;overflow:hidden; padding-bottom:60%;}
+
+.vidPromoVideo iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+.vidPromoVideo .mhsVideoTitleAndDescription {display:none;}
+
+@media only screen and (min-width: 360px)
+{
+	#courseSearch #courseSearchButtons input { margin-right: 10px; padding: 6px 10px; }
+}
+
+@media only screen and (min-width: 600px)
+{
+
+
+	.courseFinder.single #studyLevel { width: 60%; max-width: 220px; background-color: #fff;}
+	.courseFinder.single .inputWrapper { width: 60%; max-width: 400px; display: inline-block; }
+	.courseFinder.single input[type=text] { }
+	.courseFinder.single input[type=submit] { width: 30%; max-width: 160px; margin-left: 1em; border-radius: 4px; }
+
+	#courseSearchButtons input { margin-right: 10px; padding: 6px 15px; }
+
+	div#columnHeadings { margin-top: 10px; border: 0px solid #383b3c; border-bottom-width: 0; background-color: #fff; width: 100%; display: none; }
+
+	div.title { display: inline-block; zoom: 1; *display: inline; width: 60%; padding: 1%; }
+	.undergraduate div.degree { display: inline-block; zoom: 1; *display: inline; width: 18%; padding: 1%; }
+	div.duration { display: inline-block; zoom: 1; *display: inline; width: 16%; padding: 1%; }
+	.postgraduate div.duration { width: 36%; }
+	div.ucas { display: none; }
+
+	ul.courseList li div { padding: 8px 1%; }
+
+	ul.courseList li div.degree:before { content: ""; }
+	ul.courseList li div.duration:before { content: ""; }
+	ul.courseList li div.ucas:before { content: ""; }
+
+	ul.courseList li { margin: 0 !important; padding: 0; border: 0px solid #ccc; border-top-width: 0; }
+
+	.videobox2 a .video-play-button { height: 100px; width: 100px; margin-left: -50px; margin-top: -50px; /*background-position: 0 0;*/ background-size: 200px 100px; }
+	.videobox2 a:hover .video-play-button { background-position: -100px 0; }
+
+	.ie7 .videobox2.fullwidth { width: 480px; height: 270px; padding: 0; }
+	.ie7 .videobox2.fullwidth img { width: 480px; height: 270px; }
+	.ie7 .videobox2.fullwidth div { width: 480px !important; height: 270px !important; }
+
+	ul.socialmedia.corporate { text-align: center; }
+
+	table.socialmedia td { display: table-cell; }
+	table.socialmedia td.entity { width: 40%; }
+	table.socialmedia td.channels { width: 60%; }
+	
+	.vidPromoVideo {padding-bottom:40%;}
+}
+
+@media only screen and (min-width: 700px)
+{
+	#quickLinksBackground { background-color: #fff; }
+
+
+
+	.home .courseFinder .formRowContainer { float: right; width: 50%; margin-left: 10px; }
+	.home .courseFinder.multi input[type=text] { }
+
+	.videobox2 a .video-play-button { height: 80px; width: 80px; margin-left: -40px; margin-top: -40px; /*background-position: 0 0;*/ background-size: 160px 80px; }
+	.videobox2 a:hover .video-play-button { background-position: -80px 0; }
+
+	.ie7 .videobox2.fullwidth { width: 320px; height: 180px; padding: 0; }
+	.ie7 .videobox2.fullwidth img { width: 320px; height: 180px; }
+	.ie7 .videobox2.fullwidth div { width: 320px !important; height: 180px !important; }
+
+	.searchresults-navigation ul li.numeric { display: inline; }
+	.searchresults-navigation ul li a,
+	.searchresults-navigation ul li span { min-width: 20px; }
+	.searchresults-navigation ul li span { background: #393a3c; color: #fff; }
+	.searchresults-navigation ul li span.pagetext { display: none; }
+}
+
+@media only screen and (min-width: 800px)
+{
+	#quickLinksForm { display: none; }
+	#quickLinksList { display: block; }
+
+	#courseprofile #compareCourse { display: block; }
+}
+
+@media only screen and (min-width: 960px)
+{
+	#courseprofile #schoolPanel { display: block; position: absolute; top: 0; right: 0; box-sizing: border-box; -moz-box-sizing: border-box; float: right; background-color: #ececed; padding: 20px; width: 50%; max-width: 300px; border-top: 1px solid #999; border-right: 1px solid #999; }
+	#courseprofile #schoolPanel p { font-weight: 600; }
+	#courseprofile #schoolPanel p#schoolName { font-size: 1.384615em; line-height: 1.3; padding-bottom: 0; }
+	#courseprofile #schoolPanel p#schoolName a { font-weight: 600; color: #6b2c91; text-decoration: none; display: block; padding-right: 20px; background: url('../images/design/menu-arrow-right-closed-grey.png') right center no-repeat; background-size: 20px 16px; }
+	#courseprofile #schoolPanel p#schoolName a:hover { text-decoration: underline; }
+
+	.courseFinder.multi .formRowContainer { float: right; width: 50%; margin-left: 20px; }
+
+	.videobox2 a .video-play-button { height: 100px; width: 100px; margin-left: -50px; margin-top: -50px; /*background-position: 0 0;*/ background-size: 200px 100px; }
+	.videobox2 a:hover .video-play-button { background-position: -100px 0; }
+
+	.ie7 .videobox2.fullwidth { width: 480px; height: 270px; padding: 0; }
+	.ie7 .videobox2.fullwidth img { width: 480px; height: 270px; }
+	.ie7 .videobox2.fullwidth div { width: 480px !important; height: 270px !important; }
+
+	form.atoz { display: none; }
+	ul.atoz { display: block; }
+
+}
+
+@media only screen and (min-width: 1000px)
+{
+
+	#researchstaffprofile #pageSelector { display: none; }
+
+	#researchstaffprofile .tab { display: block; padding: 0; margin: 20px 0 20px 0; color: #272828; }
+	#researchstaffprofile .tab ul { background: #fff url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; }
+	#researchstaffprofile .tab ul li { width: auto; height: auto; margin-right: 5px; }
+	#researchstaffprofile .tab ul li span { display: block; width: auto; height: auto; padding: 0; }
+	#researchstaffprofile .tab ul li span a { display: block; width: auto; height: auto; padding: 6px 5px 8px 5px; background: #ebeced url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; }
+	#researchstaffprofile .tab ul li.current span a { background-color: #fff; background-image: none; }
+
+	#researchstaffprofile .researchstaffprofile-section .body img.photo { float: left; border: 1px solid black; margin: 0 10px 10px 0; padding: 0; position: relative; width: 100px; }
+	#researchstaffprofile .researchstaffprofile-section .withphoto p,
+	#researchstaffprofile .researchstaffprofile-section .withphoto div { margin-left: 120px; }
+	#researchstaffprofile .researchstaffprofile-section .withphoto ul {	margin-left: 130px; }
+	#researchstaffprofile .researchstaffprofile-section .withphoto p div { margin-left: 0; }
+}
+
+@media only screen and (min-width: 1200px)
+{
+	#columnHeadings.undergraduate div.title { display: inline-block; zoom: 1; *display: inline; width: 48%; padding: 1%; }
+	#columnHeadings.undergraduate div.degree { display: inline-block; zoom: 1; *display: inline; width: 16%; padding: 1%; }
+	#columnHeadings.undergraduate div.duration { display: inline-block; zoom: 1; *display: inline; width: 16%; padding: 1%; }
+	#columnHeadings.undergraduate div.ucas { display: inline-block; zoom: 1; *display: inline; width: 12%; padding: 1%; }
+
+	#courseList.undergraduate div.title { width: 48%; }
+	#courseList.undergraduate div.degree { width: 16%; }
+	#courseList.undergraduate div.duration { width: 16%; }
+	#courseList.undergraduate div.ucas { display: inline-block; width: 12%; }
+
+	#courseprofile .heading p.taborall { display: block; }
+	#courseprofile #pageSelector { display: none; }
+
+	#courseprofile .tab { display: block; padding: 0; margin: 20px 0 20px 0; color: #272828; }
+	#courseprofile .tab ul { background: #fff url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; }
+	#courseprofile .tab ul li { width: auto; height: auto; margin-right: 5px; }
+	#courseprofile .tab ul li span { display: block; width: auto; height: auto; padding: 0; }
+	#courseprofile .tab ul li span a { display: block; width: auto; height: auto; padding: 6px 5px 8px 5px; background: #ebeced url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; }
+	#courseprofile .tab ul li.current span a { background: #fff; }
+
+	#courseprofile div.factfile { overflow: hidden; }
+	#courseprofile div.factfile dt { float: left; clear: both; width: 200px; margin: 0 0 0.7em 0; /*background-color: #f00;*/ }
+	#courseprofile div.factfile dt:after { content: ":"; }
+	#courseprofile div.factfile dd { float: left; width: 460px; /*background-color: #0f0;*/ }
+
+/*	#countryprofile #pageSelector { display: none; }*/
+
+	#countryprofile .tab { display: block; padding: 0; margin: 20px 0 20px 0; color: #272828; }
+
+	#countryprofile .tab ul { margin: 0; padding: 0; list-style: none; overflow: hidden; background: #fff url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; }
+	#countryprofile .tab ul li { display: inline; float: left; margin: 0 5px 0 0; padding: 0; font-weight: normal; background: none; }
+	#countryprofile .tab ul li a { float: left; display: block; /*text-align: center;*/ background-color: #e2e2e2; color: #000; text-decoration: none; margin: 0; padding: 6px 5px 8px 5px; height: auto; border: 1px solid #999; border-bottom: none; font-size: 0.9em; font-weight: 500; background: #e2e2e2 url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+	#countryprofile .tab ul li a:hover { text-decoration: underline; }
+	#countryprofile .tab ul li span { display: block; padding: 0; }
+	#countryprofile .tab ul li span a { color: #272828; border-color: #999; display: block; padding: 6px 5px 8px 5px; background: #ebeced url("../images/design/tabs-border-bottom-2.png") repeat-x bottom left; }
+	#countryprofile .tab ul li.current span a { background-color: #fff; background-image: none; }
+
+	a.applyUcas { margin-left: -12px; }
+
+	.ie7 .videobox2.fullwidth { width: 640px; height: 360px; padding: 0; }
+	.ie7 .videobox2.fullwidth img { width: 640px; height: 360px; }
+	.ie7 .videobox2.fullwidth div { width: 640px !important; height: 360px !important; }
+}

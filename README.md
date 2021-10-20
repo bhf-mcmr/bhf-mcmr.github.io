@@ -1,3 +1,3 @@
 # bhf-mcmr.github.io
 
-Demo site for MCMR
+Demo UoM MCMR site

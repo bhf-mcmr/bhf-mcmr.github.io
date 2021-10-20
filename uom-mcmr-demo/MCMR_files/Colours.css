@@ -1,0 +1,127 @@
+﻿/*
+White	            #fff        TEXT BACKGROUND
+Light grey	        #f0f0f0          BACKGROUND
+Mid grey            #eee        TEXT BACKGROUND
+Light light blue	#79c5e8     TEXT
+Mid light blue	    #28a0d8     TEXT BACKGROUND
+Dark light blue	    #1d739c     TEXT BACKGROUND
+Dark blue	        #004e72     TEXT BACKGROUND
+Dark grey           #1d1d1d     TEXT BACKGROUND
+
+Rarely used colours
+    Text
+        #464646 quicklinks - lightest grey normal text possible on #ECECED
+        #74777a breadcrumbs - lightest grey normal text possible on white
+        #1b6c92 "View full page" and "View tabs" links for course pages on background #e2e2e2 (#eee is not dark enough)
+
+    Background
+        #000 black background for masthead images - this will be covered by the image
+
+*/
+
+h1, .styleAsH1 {
+  color: #28a0d8;
+}
+
+.breadcrumbNav li a {
+    color: #74777a;
+}
+
+.masthead-image {
+    background-color:#ECECED;
+}
+
+.megaSubPanel p,
+.mainContentContainer a,
+.newsTitleContainer	a.all,
+.mainContentContainer table a,
+.mainContentContainer .bkgnd-grey a {
+    color: #1d739c;
+}
+
+.primaryNav-container,
+.social-tab span {
+  background-color: #28a0d8;
+}
+
+.primaryNav ul.megaMenu li.menuItem a.home {
+    color:#fff;
+    font-weight:bold;
+}
+
+.megaSubPanel p {
+    font-size: 0.9em;
+    font-weight:bold;
+}
+
+@media screen and (min-width: 768px) {
+    .primaryNav ul.megaMenu li.menuItem a.megaLink {
+      font-size: 1.54em;
+    }
+}
+.bkgnd-light-blue,
+#mobile-menu-container #closeMenuItem,
+.primaryLeftNavNew ul li.sectionHeader > a {
+    background-color: #1d739c;
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+textarea:focus,
+select:focus { border: 1px solid #28a0d8; }
+
+.colourPromo.blue {
+  background: #004e72;
+}
+.colourPromo.blue h2, 
+.colourPromo.blue h3, 
+.colourPromo.blue p {
+  color: #fff;
+}
+
+
+.courseFinder.single p a:before,
+.courseFinder p a, 
+.courseFinder p a:visited, 
+.courseFinder p a:hover {
+  color: #A9DAF1;
+}
+
+.courseFinder-inner input[type=button] {
+    background-color: #28a0d8;
+    font-weight: 600;
+}
+
+.course-finder,
+.course-finder a {
+    color: #A9DAF1;
+}
+
+.quicklinks a, .quicklinks a:visited {
+    color: #464646;
+}
+.footerContainer .inlineList li {
+  font-size: 1.076923em!important;
+  color: #aaa;
+  font-weight: 400;
+}
+
+
+#courseprofile .heading p.taborall a {
+    color: #1b6c92;
+}
+
+.bannerlistmainpanel p {
+    color: #ffffff; 
+}
+.bannerlistmainpanel a {
+    color: #ffffff; text-decoration:none;
+}
+.bannerlistmainpanel a:hover {
+    color: #ffffff !important; text-decoration:underline;
+}
+.bannerlistmainpanel a:visited {
+    color: #ffffff;
+}

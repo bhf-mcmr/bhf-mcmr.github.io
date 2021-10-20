@@ -1,0 +1,789 @@
+/* from corporate CSS */
+p {font-size:1.230769em; line-height:1.5; padding:0 0 .5em; /*color: #808184;*/ color: #343536; font-weight:400; }
+
+dt,dd {
+	font-size: 1.230769em;
+}
+
+input[type=submit],
+input[type=button] { background-color: #27A2DB; color: #fff; border: 0; /*min-width: 150px;*/ padding: 6px 15px; font-weight: 400; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+input[type=submit]:hover, input[type=submit]:focus,
+input[type=button]:hover, input[type=button]:focus { background-color: #35AFE8; }
+input[type=submit]:active,
+input[type=button]:active { background-color: #0889C4; }
+
+input, select { background: white; }
+
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+select,
+textarea { -moz-box-shadow: 0 1px 2px 0 #eee inset; -webkit-box-shadow: 0 1px 2px 0 #eee inset; box-shadow: 0 1px 2px 0 #eee inset; }
+
+.disabled .formRowContainer select { -webkit-appearance: none; /*Removes default chrome and safari style*/ -moz-appearance: none; /* Removes Default Firefox style*/ background: #fff url('../images/design/icon-selectBox-arrow.gif') no-repeat; /*Adds background-image*/ background-position: 96% 50%; /*Position of the background-image*/ text-indent: 0.01px; /* Removes default arrow from firefox*/ text-overflow: ""; /*Removes default arrow from firefox*/ padding-right: 15px; width: 100%; }
+.formRowContainer select { width: 100%; }
+.formRowContainer select.autoWidth { width: auto; }
+
+.lt-ie10 select { background: none; padding-right: 10px; }
+
+.searchFilterWrapper {display:none;}
+
+
+
+/* 
+
+
+
+
+/* Left nav */
+.primaryLeftNavNew ul.sectionMenu li span a {
+  border-left: 6px solid #1d739c;
+  padding-left: 30px;
+  border-right: 6px solid #1d739c;
+  padding-right: 9px;
+  color: #1d739c;
+  background-color: #fff;
+  color:#272828;
+}
+
+.primaryLeftNavNew ul.sectionMenu li a:hover,
+.primaryLeftNavNew ul.sectionMenu li a:focus,
+#mobile-menu-container ul.sectionMenu li a:hover,
+#mobile-menu-container ul.sectionMenu li a:focus {
+	background-color: #f0f0f0;
+}
+
+#mobile-menu-container ul.sectionMenu li span a {
+  border-left-color: #004e72;
+}
+
+.colourPromo input[type=text], 
+.colourPromo input[type=password], 
+.colourPromo input[type=number], 
+.colourPromo input[type=email], 
+.colourPromo textarea, 
+.colourPromo select {border-width:0;}
+
+
+/* Table */
+
+table										{display:block; margin:0 0 30px; overflow:auto; color: #004E72;}
+table caption								{/*padding:6px; font-size:1.230769em;*/position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+table tr 									{border: 0px solid #ccc;}
+table tbody tr:nth-of-type(odd)				{background:#eee;}
+table th 									{background:#004E72; color:white; font-weight:bold;border:1px solid #004E72;}
+table td									{border:1px solid #ccc;}
+table td, 
+table th									{padding:6px; text-align:left; font-size:1.230769em;}
+
+table td li,
+table td p									{ font-size: 1em; }
+
+table.smalltext td,
+table.smalltext th							{font-size: 1.076923em; }
+
+
+/*
+	based on https://css-tricks.com/responsive-data-tables/
+*/
+/*table.responsive {
+	font-size: 1em;
+}*/
+
+
+table.responsive td:before {content: attr(data-label); }
+
+table.responsive td:nth-of-type(1):before 		{content: attr(data-label); }
+table.responsive td:nth-of-type(2):before 		{content: attr(data-label); }
+table.responsive td:nth-of-type(3):before 		{content: attr(data-label); }
+table.responsive td:nth-of-type(4):before 		{content: attr(data-label); }
+
+ul.listing-container {
+	margin-left:0;
+	padding-left:0;
+}
+li.listing {    
+	list-style-type: none;
+}
+
+.loading {
+    background: no-repeat url('ajax-loader-blue-32.gif');
+    width:32px;
+    height:32px;
+    display:inline-block;
+}
+
+.multiColList-two.block-arrow li a {
+    display:inline-block;
+    width:100%;
+    box-sizing:border-box;
+}
+
+/* ***** blockquote ***** */
+.pullQuote .quotes {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 75px;
+  height: 26px;
+  margin: 0 0 0 -37.5px;
+  background: url('../images/design/icon-quotes_lighterblue.gif') 0 0 no-repeat;
+}
+
+
+blockquote {
+  border-top: 1px solid #CCC;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 1.5em;
+  text-transform: none;
+}
+
+blockquote p {
+  font-weight: 500;
+  color: #28A0D8;
+}
+
+cite {
+  text-transform: none;
+  padding-bottom: 1em;
+}
+
+/* ***** google map ***** */
+.google-map {
+        position: relative;
+        padding-bottom: 75%; /* 4:3 ratio*/
+        height: 0;
+        overflow: hidden;
+        margin-bottom:1.5em;
+}
+
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ***** mhsKeywordFilter ***** */
+.mhsKeywordFilter {
+    font-size: 120%;
+}
+.mhsKeywordFilter input {
+  padding: 8px;
+  border-radius: 3px;
+  border:1px solid #999;
+  margin-left:1em;
+}
+.mhsKeywordFilter input[type=text] {
+  width: 12em;
+  color: #717275;
+}
+.mhsKeywordFilter input[type=button] {
+  background: #949699;
+}
+/* LEON: SHOULD THIS HAVE THE GREY CLASS APPLIED TO IT? I DON'T HAVE ACCESS TO THE HTML, SO I'VE WRITTEN THIS RULE IN CSS */
+.mhsKeywordFilter input[type=button]:active {
+  background-color: #7c7d80;
+}
+.mhsKeywordFilter input[type=button]:hover {
+  background-color: #a9abad;
+}
+
+/* ***** mhsListFilterButtons ***** */
+.mhsListFilterButtons {
+  margin-bottom: 1em;
+  line-height: 3.2;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #DDD;
+}
+.mhsListFilterButtons h3 {
+  display: inline;
+  margin-right: 0.5em;
+}
+.mhsListFilterButtons label {
+  background-color: #28a0d8;
+  color: #fff;
+  font-size: 120%;
+  padding: 0.5em 0.8em;
+  margin-right: 0.8em;
+}
+.mhsListFilterButtons input[type="radio"]:checked + label {
+  /* Do something special with the selected state */
+  background-color: #14516e;
+}
+.mhsListFilterButtons label:hover,
+.mhsListFilterButtons label:focus {
+  cursor: pointer;
+}
+
+/* ***** eScholar list ***** */
+.eScholarList .searchQuery {display:none;}
+.eScholarList .navLink {
+    padding: 0.2em 0.5em;
+    font-size:120%;
+    }
+.eScholarList .title {
+width: 100%;
+display:block;
+padding:0;
+font-size:120%;
+}
+.eScholarList .searchBox {font-size:150%;margin-bottom:10px;width:96%;}
+.eScholarList .result {margin-top:1.2em;}
+/* ***** Course Search ***** */
+.matchingCourses {
+    position:absolute;
+    background:#fff;
+    margin:0;
+    padding:0;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    display: none;
+    max-height: 400px;
+    list-style: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.matchingCourses li {
+    display:none;
+}
+.matchingCourses li.matchKeyword.matchLevel {
+    display:block;
+}
+.matchingCourses a {
+    font-weight: 400;
+    color:#343536;
+    display:block;
+    padding:5px;
+}
+.matchingCourses a:hover, 
+.matchingCourses a:focus {
+    background-color:#eee;
+}
+
+/* Course List */
+.course-list .notKeyword {
+    display:none;
+}
+.course-list .filter-certificate li:not(.certificate) { display:none; }
+.course-list .filter-diploma li:not(.diploma) { display:none; }
+.course-list .filter-distance li:not(.distance) { display:none; }
+.course-list .filter-full li:not(.full) { display:none; }
+.course-list .filter-part li:not(.part) { display:none; }
+
+#courseSearch .columnHeadings { display: none; }
+div.postgraduate div.degree { display: inline; }
+
+@media only screen and (min-width: 600px) {
+	#courseSearch .columnHeadings { display: block; }
+	div.title {
+	  width: 45%;
+	}
+	div.degree {
+	  display: inline-block;
+	  zoom: 1;
+	  width: 25%;
+	  padding: 1%;
+	}
+	div.duration {
+	  width: 24%;
+	}
+}
+
+#OldBrowserFindAPhDcontainer #API_divSearchArea{
+	background: none !important;
+	color: #14516e !important;
+}
+
+#OldBrowserFindAPhDcontainer .API_schoolTitle {
+	background-image: none !important;
+    background-color: #14516e !important;
+    font-size: 1.2em !important;
+}
+#OldBrowserFindAPhDcontainer #API_pagerBottom {
+	width: auto !important;
+}
+
+/* remove styles that are added dynamically to FindAPhD elements */
+#FindAPhDcontainer #APIContainer div[style] {
+	background:none !important;
+}
+
+
+#FindAPhDcontainer #APIContainer table tbody tr {
+	background: none;
+}
+#FindAPhDcontainer #APIContainer table td {
+	border:none;
+	padding:0 0 6px 0;
+}
+#FindAPhDcontainer #FindAPhD {
+	display: block;
+	margin-bottom: 1em;
+}
+#FindAPhDcontainer .API_searchHeading2 {
+	font-size: 1.2em;
+	padding-bottom:5px;
+}
+
+#FindAPhDcontainer #APIContainer .API_applyButtonContainer button,
+#FindAPhDcontainer #APIContainer .ResetSearch {
+  display: inline-block;
+  border: 0;
+  padding: 5px 30px;
+  background-color: #27A2DB;
+  color: #FFF;
+  border-radius: 5px;
+  margin:10px 10px 10px 0;
+  text-decoration:none;
+}
+#FindAPhDcontainer #APIContainer .API_applyButtonContainer {
+  display: inline-block;
+}
+#FindAPhDcontainer #APIContainer .ResetSearch {
+	background-color: #999;
+}
+
+#FindAPhDcontainer #APIContainer .listing-container h2 {
+	background-color: #14516e;
+	font-size: 1.15em;
+}
+#FindAPhDcontainer #APIContainer  .FindAPhDproject {
+}
+
+#FindAPhDcontainer .FindAPhDprojectType {
+	float:right;
+	font-size:90%;
+}
+
+#FindAPhDcontainer .API_fundingDiv {
+  float: left;
+  width: 37px;
+  height: 24px;
+  padding: 6px 16px 6px 6px;
+}
+#FindAPhDcontainer .API_appDeadlineStyle {
+	font-size:90%;
+	padding-bottom:5px;
+	display: inline-block;
+}
+#FindAPhDcontainer #APIContainer .supervisors {
+	font-size:1.15em;
+	line-height:1.4;
+}
+#FindAPhDcontainer .API_courseDetails {
+	margin-top:10px;
+	margin-left:59px;
+}
+#FindAPhDcontainer .API_separator {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+
+#FindAPhDcontainer #API_divPager div {
+	display: inline;
+}
+#FindAPhDcontainer #API_divPager .API_buttonCentreStyle {
+  border: 0;
+  padding: 5px 10px;
+  background-color: #999;
+  color: #FFF;
+  border-radius: 5px;
+  margin-top:10px;
+  margin-right: 10px;
+  font-size: 100%;
+}
+
+#FindAPhDcontainer #API_divPager .API_divFilter .API_buttonCentreStyle {
+  background-color: #27A2DB;
+}
+#FindAPhDcontainer #API_ResultInfo {
+	display:block;
+	margin-top: 20px;
+}
+.magGlass {
+	background-image: url('../images/design/icon-search-magGlass-inPage.png');
+	background-repeat:no-repeat;
+}
+
+.inPageSearchBlock .magGlass {
+	position: absolute;
+	top: 31px;
+	left: 10px;
+	height:20px;
+	width:24px;
+}
+
+.masthead-noimage {
+	background: #14516e;
+}
+.masthead-noimage .header-overlay-wrapper {position:static;}
+.masthead-noimage .header-overlay-container {height:auto;}
+.masthead-noimage .header-overlay {width:100%;padding-top:3%;}
+.masthead-noimage .spacer {display:none;}
+
+.letters-after-name {font-size: 60%;}
+
+@media only screen and (min-width: 600px)
+{
+	.masthead-slide-content .largeTitle span {
+		display: inline-block;
+		padding: 4px 10px 4px;
+		zoom: 1;
+		background-color: rgba(255, 255, 255, 0.8);
+		color: #000;
+		font-size: 1.8em;
+		font-weight: 300;
+		line-height: 1.2;
+		max-width: 10em;
+  }
+  .masthead-slide-content .description {
+		padding: 10px;
+		zoom: 1;
+		background-color: rgba(255, 255, 255, 0.8);
+		color: #000;
+  }
+  /*
+	.contactdetails .photo { float: left; border: 1px solid #666; margin: 0; padding: 0; position: relative; width: 141px;}
+	.contactdetails .addressdetails.has-photo { margin-left: 170px; } 
+	*/
+	/* ********* STAFF PROFILE ********* */
+	.contactdetails .photo {float: left; }
+	.contactdetails .photo img {border: 1px solid #C4C4C5; margin: 0; padding: 0; relative; width: 141px; }
+	.addressdetails.has-photo {
+	    margin-left: 170px;
+	}
+	.addressdetails.has-photo h2 {
+	    clear: none;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.header-overlay {
+		padding-top:5%;
+	}
+	
+		/* Course Finder */
+		.courseFinder-inner 						{}
+		.courseFinderSelectWrapper 					{float:left; width:38%; margin:0 10px 0 0;}
+		.courseFinderInputWrapper 					{float:left; width:38%;}
+}
+
+@media only screen and (min-width: 1800px)
+{
+	.header-overlay-wrapper .spacer {
+		width: 33%;
+	}
+}
+@media only screen and (min-width: 2400px)
+{
+	.header-overlay-wrapper .spacer {
+		width: 40%;
+	}
+}
+
+#courseprofile .prevnext {
+  background: url("../images/design/course-next-arrow-blue.png") top right no-repeat #14516e;
+}
+
+h1 span {
+  font-weight: 300;
+  font-size: 100%;
+}
+
+#courseprofile .heading {
+  overflow: hidden;
+  margin: 10px 0 0 0;
+}
+
+#courseprofile .heading h1 {
+  font-weight: 400;
+}
+
+#courseprofile .yearOfEntry {
+	float: left;
+	font-size:180%;
+}
+
+#courseprofile .yearOfEntry a {
+	font-size:68%;
+	margin-left:1em;
+}
+
+#courseprofile .heading p.taborall {
+  width: 12em;
+  float: right;
+  margin: 0;
+  margin: 0 0 0 0;
+  background-color: #E2E2E2;
+  padding: 7px 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+
+
+#courseprofile .tab {
+  padding: 0;
+  margin: 20px 0 20px 0;
+}
+
+#courseprofile  .section-heading {
+	display:none;
+}
+#courseprofile  .all .section-heading {
+	display:block;
+}
+
+#courseprofile h3 {
+	font-size:262%;
+	font-weight:300;
+}
+#courseprofile .all h3 {
+	font-size:200%;
+	font-weight:normal;
+}
+
+/* images with focal points */
+.header-bkgnd-container {
+	position: relative;
+}
+/* the pretend image is a full width block that maintains the same aspect ratio as the image (1400/400). */
+.pretend-image {
+				padding-bottom: 28.57%;
+				visibility: hidden; /* Even though it doesn't contain anything, for sementics, hide it but allow it to take up space */
+}
+/* ths image is absolutely positioned relative to .header-bkgnd-container */
+.masthead-slide img, .masthead-image img.focusable {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				position: absolute;
+				top: 0;
+				margin-top: 0;
+				
+				/* align image at top - image is cropped from the bottom as it overflows 
+				top: 0%;
+				margin-top: 0%;
+				*/
+				
+				/* align image in the middle (vertically) - image is cropped from the top and bottom as it overflows 
+				top: 50%;
+				margin-top: -14.3%;
+				*/
+				
+				/* align image at the bottom - image is cropped from the top as it overflows 
+				top: 100%;
+				margin-top: -28.57%;
+				*/
+
+				/* the general formula is 
+				top: x%;
+				margin-top: -28.57143 * x/100 %;
+
+				*/
+}
+
+/* ********* VIDEO START ********* */
+	.mhsVideo section {
+		position: relative;
+
+	}
+	.mhsVideo .mejs-video {
+		margin-bottom: 20px;
+	}
+	.mhsVideo .mejs-captions-text {
+		font-size:0.8em;
+		line-height: 1.9;
+		padding: 0.2em 0.5em;
+		/* add padding at the end of broken lines */
+		-webkit-box-decoration-break: clone;
+		-moz-box-decoration-break: clone;
+		box-decoration-break: clone;
+	}
+	@media only screen and (min-width: 500px) {
+		.mhsVideo .mejs-captions-text {
+			font-size:1em;
+			line-height: 1.8;
+		}
+	}
+	.mhsVideo .mejs-overlay-button,
+	.videobox2 a .video-play-button {
+		/*background-image:url("https://apps.mhs.manchester.ac.uk/videodb/scripts/MediaElementModifications/play-blue-black.png");*/
+		background-image:url('../images/design/play-fbmh_ps.png');
+
+	}
+	.mhsVideo .mejs-overlay:hover .mejs-overlay-button, 
+	.mhsVideo .mejs-overlay:focus .mejs-overlay-button {
+	  background-position: -100px 0;
+	}    
+	.mhsVideoTitleAndDescription h2 {
+		font-size:1.6em;
+		font-weight:normal;
+		line-height: 1.4;
+		padding-top:10px;
+	}
+	.mhsVideoTitleAndDescription div {
+		font-size:1.3em;
+		font-weight:normal;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+	/* older styles for when the title and description should overlay the video - the description is hidden until you hover, which doesn't work on a touch device */
+	.overlay-title .mhsVideoTitleAndDescription {
+		position:absolute;
+		bottom:0;
+		z-index:9999;
+	}
+	.overlay-title .mhsVideoTitleAndDescription h2,
+	.overlay-title .mhsVideoTitleAndDescription div {
+		color:#fff;
+		margin:0;
+		padding:10px;
+	 }
+	.overlay-title .mhsVideoTitleAndDescription h2 {
+		background-color:#14516e;
+		font-size:1.5em;
+	}
+	.overlay-title .mhsVideoTitleAndDescription div {
+		background-color:#1d739c;
+		font-size:1.2em;
+		font-weight:300;
+		color:#fff;
+		display:none;
+	}
+	/* playlist  */
+	.mhsVideoPlaylistWithCarousel  .slide {
+	  display: block;
+	  position: relative;
+	  float: left;
+	  width:250px;
+	}
+	/* #courseprofile messes with h3 - set it back to the standard h3.largeTitle */
+	#courseprofile .mhsVideoPlaylistWithCarousel  h3.largeTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 1.384615em;
+    line-height: 1.333333;
+    color: #000;
+    font-weight: 400;
+	}
+	.carouselImage,
+	.carouselContent {
+	  margin: 0 16px 0 0;
+	}
+	.carouselImage {
+		height:130px;
+		width: 234px;
+		overflow-y:hidden;
+	}
+	.carouselImage img {
+		width:100%;
+	}
+	.videoCarousel .slide a:hover,
+	.videoCarousel .slide a:focus {
+		cursor: pointer;
+	}
+	/* copied from global.css but specific to .mhsVideoPlaylist and without screen width restriction */
+			.mhsVideoPlaylistWithCarousel .wrapper 									{position: relative; width: 100%; height:250px; overflow: hidden; background-color: #fff;}
+			.no-js .mhsVideoPlaylistWithCarousel .wrapper 								{width:90%; max-width:1140px; height:auto; margin:0 auto}
+
+			.mhsVideoPlaylistWithCarousel .carousel .slide 							{display:block; position:relative; float: left;}
+			.no-js .mhsVideoPlaylistWithCarousel .carousel .slide 						{width:48%; margin:0 4% 20px 0}
+			.no-js .mhsVideoPlaylistWithCarousel .carousel .slide:nth-child(2n) 		{margin-right:0}
+
+			.mhsVideoPlaylistWithCarousel .carousel .slide span 						{display:block; width:90%; margin:0 auto;}
+			.no-js .mhsVideoPlaylistWithCarousel .carousel .slide span 					{width:100%;}
+			
+			.mhsVideoPlaylistWithCarousel .carousel .slide .carouselContent 			{margin:0 auto; width:90%;}
+			.no-js .mhsVideoPlaylistWithCarousel .carousel .slide .carouselContent 		{width:100%;}
+
+			.mhsVideoPlaylistWithCarousel .prev, 
+			.mhsVideoPlaylistWithCarousel .next 										{display: block; position: absolute; top: 0; width: 15%; height: 100%; z-index:1001;
+														background-color: rgba(255,255,255,0.7);}
+
+			
+			.no-js .mhsVideoPlaylistWithCarousel .prev, 
+			.no-js .mhsVideoPlaylistWithCarousel .next									{display:none;}
+			
+			.mhsVideoPlaylistWithCarousel .prev:hover, 
+			.mhsVideoPlaylistWithCarousel .next:hover 									{background-color: rgba(255,255,255,0.8);}
+
+			.mhsVideoPlaylistWithCarousel .prev 										{left: 0;
+														background-image:url('../images/design/icon-carousel-left.png');
+														background-position: 50% 20%;
+														background-repeat:no-repeat}
+
+			.mhsVideoPlaylistWithCarousel .next 										{right: 0;
+														background-image:url('../images/design/icon-carousel-right.png');
+														background-position: 50% 20%;
+														background-repeat:no-repeat}
+														
+			.ie7 .mhsVideoPlaylistWithCarousel .prev,
+			.ie8 .mhsVideoPlaylistWithCarousel .prev									{zoom:1;
+														filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
+														-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";
+														background-image:url('../images/design/icon-carousel-left-ie7.png');}
+														
+			.ie7 .mhsVideoPlaylistWithCarousel .next,
+			.ie8 .mhsVideoPlaylistWithCarousel .next									{zoom:1;
+														filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
+														-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";
+														background-image:url('../images/design/icon-carousel-right-ie7.png');}
+
+.mhsVideoPlaylistWithoutCarousel .slide {
+    clear:left;
+}
+.mhsVideoPlaylistWithoutCarousel .description {
+    display: block;
+    margin-bottom:1em;
+    padding-top:0.4em;
+}
+@media only screen and (min-width: 450px) {
+    .mhsVideoPlaylistWithoutCarousel .carouselImage {
+        float: left;
+    }
+
+    .mhsVideoPlaylistWithoutCarousel .carouselContent {
+        margin-left: 250px;
+    }
+    .mhsVideoPlaylistWithoutCarousel .description {
+        display: block;
+        margin-bottom:0;
+    }
+}
+/* ********* VIDEO END ********* */
+
+/* *** JC MODS START *** */
+.vidPromoVideo { height: auto; padding-bottom: 30px; }
+.vidPromoVideo figcaption { position: relative; left: auto; margin-top: 10px; max-width: none; padding: 0; }
+.vidPromoVideo .videobox2 { margin-bottom: 0; padding-bottom: 56.25% !important; }
+/* This bottom padding gives 16:9 aspect ratio for video. */
+
+@media only screen and (min-width: 600px) {
+	.vidPromoVideo .videobox2 { padding-bottom: calc((36.82608695652174% / 0.654) + 26px) !important; }
+	/*
+	This bottom padding aligns bottom of video with bottom of second image promo.
+	This calculation is based on intrinsic dimensions of promo box images being 368 x 220 pixels (1.672727272727273 aspect ratio).
+	Promo boxes have a 'fourcol' class width of 30.8%.
+	Based on their 1.672727272727273 aspect ratio, they each have a height of 18.41304347826087%.
+	The combined height of two promo boxes is therefore 36.82608695652174%.
+	There is 2em (26px) vertical margin between the two image promo boxes.
+	Video box container has an 'eightcol' class width of 65.4%.
+	To make the video's bottom edge align with the bottom of second image promo, we set its height (via padding-bottom) to:
+	calc((36.82608695652174% / 0.654) + 26px)
+	*/
+}
+/* *** JC MODS END *** */
